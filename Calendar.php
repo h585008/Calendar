@@ -61,7 +61,7 @@ class Calendar {
             }
             $html .= '</div>';
         }
-        for ($i = 0; $i <= (33-$num_days-max($first_day_of_week, 0)); $i++) {
+        for ($i = 1; $i <= (33-$num_days-max($first_day_of_week, 0)); $i++) {
             $html .= '
                 <div class="day_num ignore">
                     ' . $i . '
