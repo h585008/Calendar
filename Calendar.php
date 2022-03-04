@@ -5,7 +5,7 @@ class Calendar {
 
     private $events = [];
 
-    public function __construct($date = null){
+    public function __construct($date = '2022-05-01'){
         $this->active_year = $date != null ? date('Y', strtotime($date)) : date('Y');
         $this->active_month = $date != null ? date('m', strtotime($date)) : date('m');
         $this->active_day = $date != null ? date('d', strtotime($date)) : date('d');
